@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/ionicons@4.4.1/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MyGIFs!</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo-box">
+            <i class="icon ion-ios-images logo"></i>
+        </div>
+        <div class="header__heading">
+            <h1 class="header__heading--main">Welcome to MyGIFS!</h1>
+            <span class="header__heading--sub">Simply search for the GIF you want and enjoy the results</span>
+        </div>
+        <div class="header__likes-box">
+            <a href="" class="header__likes-box--link">favorites</a>
+        </div>
+    </header>
+
+    <div class="search-box">
+        <input type="text" placeholder="Surprise!" class="search-box--input">
+        <div class="search-box__buttons">
+            <button class="btn-normal" id="btn-submit">Submit</button>
+            <button class="btn-normal" id="btn-random">Random</button>
+        </div>
+    </div>
+
+    <section class="results">
+<!--
+        <div class="results-list">
+            <div class="results-box">
+                <div class="results__card">
+                    <h2 class="results__card-heading">happy the office</h2>
+                    <span class="results__card-score">Score: 3000</span>
+                    <div class="results__card-img-box">
+                        <img src="https://i.giphy.com/media/XOXdQszYm4I3m/giphy.webp" alt="fun" class="results__card-img" />
+                    </div>
+                    <div class="results__card-actions">
+                        <i class="icon ion-md-heart-empty icon-action"></i>
+                        <i class="icon ion-logo-facebook icon-action"></i>
+                        <i class="icon ion-md-download icon-action"></i>
+                        <i class="icon ion-md-clipboard icon-action"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="results-box">
+                <div class="results__card">
+                    <h2 class="results__card-heading">nasim pedrad</h2>
+                    <span class="results__card-score">Score: 2300</span>
+                    <img src="https://i.giphy.com/media/87NS05bya11mg/giphy.webp" alt="fun" class="results__card-img" />
+                    <div class="results__card-actions">
+                        <i class="icon ion-md-heart-empty icon-action"></i>
+                        <i class="icon ion-logo-facebook icon-action"></i>
+                        <i class="icon ion-md-download icon-action"></i>
+                        <i class="icon ion-md-clipboard icon-action"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="results-box">
+                <div class="results__card">
+                    <h2 class="results__card-heading">celebrate nasim pedrad</h2>
+                    <span class="results__card-score">Score: 2000</span>
+                    <img src="https://i.giphy.com/media/Is1O1TWV0LEJi/giphy.webp" alt="fun" class="results__card-img" />
+                    <div class="results__card-actions">
+                        <i class="icon ion-md-heart-empty icon-action"></i>
+                        <i class="icon ion-logo-facebook icon-action"></i>
+                        <i class="icon ion-md-download icon-action"></i>
+                        <i class="icon ion-md-clipboard icon-action"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+-->
+    </section>
+
+    <!--
+    <div class="likes">
+        <div class="results-list">
+            <div class="results-box">
+                <div class="results__card">
+                    <h2 class="results__card-heading">happy the office</h2>
+                    <span class="results__card-score">Score: 3000</span>
+                    <img src="https://i.giphy.com/media/XOXdQszYm4I3m/giphy.webp" alt="fun" class="results__card-img" />
+                    <div class="results__card-actions">
+                        <i class="icon ion-md-heart-empty icon-action"></i>
+                        <i class="icon ion-logo-facebook icon-action"></i>
+                        <i class="icon ion-md-download icon-action"></i>
+                        <i class="icon ion-md-clipboard icon-action"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="results-box">
+                <div class="results__card">
+                    <h2 class="results__card-heading">nasim pedrad</h2>
+                    <span class="results__card-score">Score: 2300</span>
+                    <img src="https://i.giphy.com/media/87NS05bya11mg/giphy.webp" alt="fun" class="results__card-img" />
+                    <div class="results__card-actions">
+                        <i class="icon ion-md-heart-empty icon-action"></i>
+                        <i class="icon ion-logo-facebook icon-action"></i>
+                        <i class="icon ion-md-download icon-action"></i>
+                        <i class="icon ion-md-clipboard icon-action"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="results-box">
+                <div class="results__card">
+                    <h2 class="results__card-heading">celebrate nasim pedrad</h2>
+                    <span class="results__card-score">Score: 2000</span>
+                    <img src="https://i.giphy.com/media/Is1O1TWV0LEJi/giphy.webp" alt="fun" class="results__card-img" />
+                    <div class="results__card-actions">
+                        <i class="icon ion-md-heart-empty icon-action"></i>
+                        <i class="icon ion-logo-facebook icon-action"></i>
+                        <i class="icon ion-md-download icon-action"></i>
+                        <i class="icon ion-md-clipboard icon-action"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/blocksit.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

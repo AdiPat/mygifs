@@ -1,0 +1,236 @@
+$color-white: #fff;
+$color-grey: #777;
+$color-black: #000;
+
+$color-pumpkin: #d35400;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    //border: 1px solid white;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    background-image: linear-gradient(rgba($color-black, 0.6), rgba($color-black, 0.6)), url(../img/bg.jpg);
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    margin: 1rem;
+    padding: 2rem;
+    color: $color-white;
+    display: flex;
+    overflow: hidden;
+
+
+    &__logo-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+
+        font-weight: 300;
+
+        &--main {
+            font-size: 3rem;
+        }
+
+        &--sub {
+            font-size: 2rem;
+        }
+    }
+}
+
+.logo {
+    font-size: 5rem;
+    padding: 1rem;
+}
+
+.header__likes-box {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    
+    &--link {
+        font-size: 3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color-pumpkin;
+        //border: 1px solid $color-pumpkin;
+        border-radius: 0.5rem;
+        //display: inline-block;
+        //padding: 1rem;
+        //margin: 2rem;
+        transition: all 0.2s;
+
+        &:hover {
+            color: lighten($color-pumpkin, 20%);
+            transform: translateY(-0.2rem) scale(1.1);
+        }
+
+        &:active {
+            transform: translateY(0) scale(1.05);
+        }
+    }
+}
+
+
+
+.search-box {
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    //justify-content: space-between;
+    align-items: center;
+
+    &__buttons {
+        margin: 1rem;
+    }
+
+    &--input {
+        width: 50rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        font-family: inherit;
+        font-weight: 300;
+        letter-spacing: 1px;
+        border-radius: 2.5rem;
+        border: 2px solid lighten($color-grey, 20%);
+        padding: 1rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+}
+
+.results {
+    &__card {
+        display: inline-block;
+    }
+}
+
+//.results {
+//
+//    padding: 1.5rem;
+//   
+//
+//    &__card {
+//        display: inline-block;
+//        //flex-direction: column;
+//        //align-items: center;
+//        //justify-content: center;
+//        background-color: rgba($color-white, 0.8);
+//        border-radius: 0.3rem;
+//        width: 23%;
+//        //height: 20vh;
+//        transition: transform 0.3s;
+//        position: relative;
+//
+//        &-heading {
+//            font-weight: 300;
+//            font-size: 2rem;
+//            margin: 0.5rem;
+//        }
+//
+//        &-score {
+//            display: block;
+//            font-weight: 600;
+//            font-size: 1.5rem;
+//            margin: 0.5rem;
+//        }
+//        
+//
+//        &-img {
+//            height: 20vh;
+//            width: auto;
+//        }
+//        
+//        &-actions {
+//            display: flex;
+//            justify-content: space-between;
+//            align-items: center;
+//            position: absolute;
+//            top: 2rem;
+//            right: 2rem;
+//        }
+//    }
+//    
+//}
+
+.icon-action {
+    font-size: 4rem;
+    margin: 0.5rem 1rem 0 1rem;
+    color: $color-pumpkin;
+    transition: all 0.2s;
+
+    &:hover {
+        color: lighten($color-pumpkin, 20%);
+        transform: translateY(-0.5rem) scale(1.15);
+    }
+
+    &:active {
+        color: $color-pumpkin;
+        transform: translateY(-0.2rem) scale(1.10);
+    }
+}
+
+//.likes {
+//    position: absolute;
+//    display: none;
+//    top: 50%;
+//    left: 50%;
+//    transform: translate(-50%);
+//    z-index: 9999;
+//    border: 2px solid white;
+//    visibility: hidden;
+//    transition: display 1s;
+//}
+
+// BUTTONS
+
+.btn-normal {
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    padding: 0.5rem 2.5rem;
+    display: inline-block;
+    margin: 1rem;
+    transition: all 0.2s;
+    font-weight: 300;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        color: $color-white;
+        border: 1px solid $color-pumpkin;
+        background-color: $color-pumpkin;
+        transform: translateY(-3px);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+
+}

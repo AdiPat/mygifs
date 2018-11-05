@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%; }
+
+body {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg.jpg);
+  background-color: black;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  margin: 1rem;
+  padding: 2rem;
+  color: #fff;
+  display: flex;
+  overflow: hidden; }
+  .header__logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem; }
+  .header__heading {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300; }
+    .header__heading--main {
+      font-size: 3rem; }
+    .header__heading--sub {
+      font-size: 2rem; }
+
+.logo {
+  font-size: 5rem;
+  padding: 1rem; }
+
+.header__likes-box {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center; }
+  .header__likes-box--link {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #d35400;
+    border-radius: 0.5rem;
+    transition: all 0.2s; }
+    .header__likes-box--link:hover {
+      color: #ff883a;
+      transform: translateY(-0.2rem) scale(1.1); }
+    .header__likes-box--link:active {
+      transform: translateY(0) scale(1.05); }
+
+.search-box {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  align-items: center; }
+  .search-box__buttons {
+    margin: 1rem; }
+  .search-box--input {
+    width: 50rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    font-family: inherit;
+    font-weight: 300;
+    letter-spacing: 1px;
+    border-radius: 2.5rem;
+    border: 2px solid #aaaaaa;
+    padding: 1rem; }
+    .search-box--input:focus {
+      outline: none; }
+
+.results__card {
+  display: inline-block; }
+
+.icon-action {
+  font-size: 4rem;
+  margin: 0.5rem 1rem 0 1rem;
+  color: #d35400;
+  transition: all 0.2s; }
+  .icon-action:hover {
+    color: #ff883a;
+    transform: translateY(-0.5rem) scale(1.15); }
+  .icon-action:active {
+    color: #d35400;
+    transform: translateY(-0.2rem) scale(1.1); }
+
+.btn-normal {
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  padding: 0.5rem 2.5rem;
+  display: inline-block;
+  margin: 1rem;
+  transition: all 0.2s;
+  font-weight: 300; }
+  .btn-normal:focus {
+    outline: none; }
+  .btn-normal:hover {
+    color: #fff;
+    border: 1px solid #d35400;
+    background-color: #d35400;
+    transform: translateY(-3px); }
+  .btn-normal:active {
+    transform: translateY(0); }
